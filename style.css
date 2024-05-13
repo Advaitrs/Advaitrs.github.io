@@ -4,17 +4,24 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-color: #e0e0e0;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav ul {
     list-style: none;
-    text-align: center;
+    text-align: right;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -30,7 +37,7 @@ header nav ul li a {
 
 section {
     padding: 20px;
-    margin: 20px 0;
+    margin: 80px 20px 20px 20px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

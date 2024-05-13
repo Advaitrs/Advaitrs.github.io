@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advait - Personal Website</title>
+    <title>Advait Renduchintala - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,48 +22,78 @@
     
     <section id="home">
         <h1>Welcome to My Personal Website</h1>
-        <img src="advait.JPG" alt="Advait">
-        <p>Hello! I'm [Advait], a software engineering intern at Adobe. Welcome to my personal website where I showcase my work and skills.</p>
+        <img src="advait.jpg" alt="Advait Renduchintala">
+        <p>Hello! I'm Advait Renduchintala, a software engineering intern at Adobe. Welcome to my personal website where I showcase my work and skills.</p>
     </section>
     
     <section id="about">
         <h2>About Me</h2>
-        <p>Here's a little about me...</p>
+        <p>I am a Computer Engineering student at the University of Illinois, Urbana-Champaign, with a passion for data science, machine learning, and software development.</p>
     </section>
     
     <section id="experience">
         <h2>Experience</h2>
         <ul>
-            <li>Adobe - Software Engineering Intern (2024 - Present)</li>
-            <!-- Add more experiences as needed -->
+            <li>
+                <strong>Optum, UnitedHealth Group – Data Science Intern</strong><br>
+                JUNE 2022 – AUGUST 2022<br>
+                Developed a Natural Language Processing based Machine Learning model using Python, Pandas and Gensim libraries, KeyBERT keyword extraction technique, and Word2vec semantic similarity model. Implemented this model to identify UnitedHealth Group teams with data transmission issues and referred these teams to the Enterprise Systems Operating Controls team to save costs in unnecessary data recovery efforts. Created data visualization graphics using Power BI to transform complex data sets into story-telling visual representations. Analyzed and discovered trends in these visual representations to generate contextual insights. Collaborated in an Agile manner through cross-functional team sprints and by participating in daily scrums.
+            </li>
+            <li>
+                <strong>Capitol Region Education Council – Student Mentor</strong><br>
+                JUNE 2021 – AUGUST 2021<br>
+                Engaged and guided 20 elementary school children to help promote personal and educational motivation. Developed goal-oriented mathematical, and social-interaction activities to improve students’ critical thinking.
+            </li>
+            <li>
+                <strong>Perry Technology Corporation – IT/Mechanical Engineering Intern</strong><br>
+                JUNE 2019 – AUGUST 2019<br>
+                Analyzed blueprints and technical drawings to develop and design tools to manufacture parts using SolidWorks and to predict quality of manufactured parts. Organized data archive of engineering specifications and drawings by maintaining traceability of documents, and streamlined product design by using Excel to classify, clean, and standardize large amounts of data.
+            </li>
         </ul>
     </section>
     
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li><a href="link-to-project1">Project 1</a> - Description</li>
-            <!-- Add more projects as needed -->
+            <li>
+                <strong>RFID based security access control system</strong><br>
+                JANUARY 2021 – MAY 2021<br>
+                Engineered an automated and contactless system that enhanced safety and security in school environments. Designed product using Java, Arduino, RFID modules, and centralized data analytics using a SQLite database.
+            </li>
         </ul>
     </section>
     
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <!-- Add more skills as needed -->
+            <li>Programming Languages: Java, SQL, Python, R, C++, and C</li>
+            <li>Industry Knowledge: Natural Language Processing, Machine Learning, Agile Methodology</li>
+            <li>Software Tools: Tableau, Microsoft Power BI, Access, Excel, Word, and PowerPoint</li>
+            <li>Soft Skills: Decision making, Active Listening, Mentoring, Collaboration, Logical & Creative thinking</li>
+            <li>Languages: English (fluent), Spanish (proficient), and Telugu (fluent)</li>
         </ul>
     </section>
     
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <!-- Add more contact info as needed -->
+        <p>Email: <a href="mailto:advaitr3@illinois.edu">advaitr3@illinois.edu</a></p>
+        <p>Phone: (860) 839-5654</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/advait-renduchintala-37773920a">Advait Renduchintala</a></p>
     </section>
     
     <footer>
-        <p>&copy; 2024 Advait</p>
+        <p>&copy; 2024 Advait Renduchintala</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
