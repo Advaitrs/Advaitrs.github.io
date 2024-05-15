@@ -3,97 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advait Renduchintala - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Advait Renduchintala</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+        .hero h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .experience, .projects, .contact {
+            margin-top: 40px;
+        }
+        .experience h2, .projects h2, .contact h2 {
+            color: #4CAF50;
+        }
+        .experience ul, .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .experience li, .projects li {
+            margin-bottom: 20px;
+        }
+        .experience li h3, .projects li h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .experience li p, .projects li p {
+            margin: 5px 0;
+        }
+        .contact p {
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Advait Renduchintala</h1>
     </header>
-    
-    <section id="home">
-        <h1>Welcome to My Personal Website</h1>
-        <img src="advait.jpg" alt="Advait Renduchintala">
-        <p>Hello! I'm Advait Renduchintala, a software engineering intern at Adobe. Welcome to my personal website where I showcase my work and skills.</p>
-    </section>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Computer Engineering student at the University of Illinois, Urbana-Champaign, with a passion for data science, machine learning, and software development.</p>
-    </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
+    <nav>
+        <a href="#experience">Experiences</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <img src="advait.JPG" alt="Advait Renduchintala">
+        <h1>Hello, Welcome</h1>
+        <p>I'm Advait Renduchintala, a Computer Engineering student at the University of Illinois at Urbana-Champaign.</p>
+    </div>
+    <div class="section container" id="experience">
+        <h2>Experiences</h2>
         <ul>
             <li>
-                <strong>Optum, UnitedHealth Group – Data Science Intern</strong><br>
-                JUNE 2022 – AUGUST 2022<br>
-                Developed a Natural Language Processing based Machine Learning model using Python, Pandas and Gensim libraries, KeyBERT keyword extraction technique, and Word2vec semantic similarity model. Implemented this model to identify UnitedHealth Group teams with data transmission issues and referred these teams to the Enterprise Systems Operating Controls team to save costs in unnecessary data recovery efforts. Created data visualization graphics using Power BI to transform complex data sets into story-telling visual representations. Analyzed and discovered trends in these visual representations to generate contextual insights. Collaborated in an Agile manner through cross-functional team sprints and by participating in daily scrums.
+                <h3>Adobe | Incoming Software Engineering Intern</h3>
+                <p>May 2024 – Present</p>
             </li>
             <li>
-                <strong>Capitol Region Education Council – Student Mentor</strong><br>
-                JUNE 2021 – AUGUST 2021<br>
-                Engaged and guided 20 elementary school children to help promote personal and educational motivation. Developed goal-oriented mathematical, and social-interaction activities to improve students’ critical thinking.
+                <h3>Texas Instruments | Applications Engineering Intern</h3>
+                <p>May 2023 – August 2023</p>
+                <p>Developed a scalable software solution that boosted efficiency by 450% by automating data integration pipelines and generating interactive dashboards to convey financial insights on driving revenue growth for Power Switches products.</p>
             </li>
             <li>
-                <strong>Perry Technology Corporation – IT/Mechanical Engineering Intern</strong><br>
-                JUNE 2019 – AUGUST 2019<br>
-                Analyzed blueprints and technical drawings to develop and design tools to manufacture parts using SolidWorks and to predict quality of manufactured parts. Organized data archive of engineering specifications and drawings by maintaining traceability of documents, and streamlined product design by using Excel to classify, clean, and standardize large amounts of data.
+                <h3>Optum, UnitedHealth Group | Software Engineering Intern</h3>
+                <p>June 2022 – August 2022</p>
+                <p>Developed a Machine Learning algorithm using Python and Natural Language Processing based GloVe and BERT models.</p>
+            </li>
+            <li>
+                <h3>Perry Technology Corporation | IT/Mechanical Engineering Intern</h3>
+                <p>June 2019 – August 2019</p>
+                <p>Analyzed blueprints and technical drawings to develop and design tools to manufacture parts using SolidWorks and to predict quality of manufactured parts.</p>
             </li>
         </ul>
-    </section>
-    
-    <section id="projects">
+    </div>
+    <div class="section container" id="projects">
         <h2>Projects</h2>
         <ul>
             <li>
-                <strong>RFID based security access control system</strong><br>
-                JANUARY 2021 – MAY 2021<br>
-                Engineered an automated and contactless system that enhanced safety and security in school environments. Designed product using Java, Arduino, RFID modules, and centralized data analytics using a SQLite database.
+                <h3>SecurePass | Enhanced Access Control System using RFID Technology</h3>
+                <p>January 2021 – May 2021</p>
+                <p>Engineered an automated and contactless system that enhanced safety and security in school environments.</p>
             </li>
         </ul>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Java, SQL, Python, R, C++, and C</li>
-            <li>Industry Knowledge: Natural Language Processing, Machine Learning, Agile Methodology</li>
-            <li>Software Tools: Tableau, Microsoft Power BI, Access, Excel, Word, and PowerPoint</li>
-            <li>Soft Skills: Decision making, Active Listening, Mentoring, Collaboration, Logical & Creative thinking</li>
-            <li>Languages: English (fluent), Spanish (proficient), and Telugu (fluent)</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:advaitr3@illinois.edu">advaitr3@illinois.edu</a></p>
-        <p>Phone: (860) 839-5654</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/advait-renduchintala-37773920a">Advait Renduchintala</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Advait Renduchintala</p>
-    </footer>
-
-    <script>
-        document.querySelectorAll('nav ul li a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    </div>
+    <div class="section container" id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: advait.rs@gmail.com</p>
+        <p>Phone: 860-839-5654</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/advaitr/" target="_blank">https://www.linkedin.com/in/advaitr/</a></p>
+    </div>
 </body>
 </html>
